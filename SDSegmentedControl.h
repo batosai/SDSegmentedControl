@@ -32,6 +32,8 @@
 
 @property (assign, nonatomic) CGSize imageSize UI_APPEARANCE_SELECTOR;
 
+- (void)setTitleFont:(UIFont*)font;
+
 @end
 
 @interface SDStainView : UIView <UIAppearance>

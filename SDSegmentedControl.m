@@ -126,7 +126,7 @@ const CGFloat kSDSegmentedControlScrollOffset = 20;
 
     // Init stain view
     [_scrollView addSubview:self._selectedStainView = SDStainView.new];
-    self._selectedStainView.backgroundColor = [UIColor colorWithWhite:0.816 alpha:1];
+    //self._selectedStainView.backgroundColor = [UIColor colorWithWhite:0.816 alpha:1];
 }
 
 - (UIColor *)backgroundColor
@@ -943,6 +943,11 @@ const CGFloat kSDSegmentedControlScrollOffset = 20;
 #endif
     }
     return self;
+}
+
+- (void)setTitleFont:(UIFont*)font
+{
+    self.titleLabel.font = font;
 }
 
 - (void)setImage:(UIImage *)image forState:(UIControlState)state
